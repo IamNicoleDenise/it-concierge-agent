@@ -26,16 +26,18 @@ Looks up devices in a SharePoint list, shows lettered options with details and a
 
 ## Screenshots
 
-| | |
+Click any thumbnail to open the full image.
+
+| Screenshot | What it shows |
 |---|---|
-| `01` | Agent configuration: instructions, skills, tools and knowledge |
-| `02` | The Devices list in SharePoint that the agent reads from |
-| `03` | Catalog lookup with lettered options and photos |
-| `04` | Choosing an option and adding a requirement |
-| `05` | Request summary, confirmation and submission |
-| `06` | The email IT receives |
-| `07`-`10` | Troubleshooting an Outlook problem from first message to resolution |
-| `11` | The Power Automate flow behind the device request email |
+| <a href="screenshots/01-agent-configuration.png"><img src="screenshots/01-agent-configuration.png" width="120" alt="01 Agent configuration"></a> | **01** Agent configuration: instructions, skills, tools and knowledge |
+| <a href="screenshots/02-devices-list-sharepoint.png"><img src="screenshots/02-devices-list-sharepoint.png" width="120" alt="02 Devices list"></a> | **02** The Devices list in SharePoint that the agent reads from |
+| <a href="screenshots/03-device-request-catalog-options.png"><img src="screenshots/03-device-request-catalog-options.png" width="120" alt="03 Catalog options"></a> | **03** Catalog lookup with lettered options and photos |
+| <a href="screenshots/04-device-request-option-and-requirements.png"><img src="screenshots/04-device-request-option-and-requirements.png" width="120" alt="04 Option and requirement"></a> | **04** Choosing an option and adding a requirement |
+| <a href="screenshots/05-device-request-submitted.png"><img src="screenshots/05-device-request-submitted.png" width="120" alt="05 Request submitted"></a> | **05** Request summary, confirmation and submission |
+| <a href="screenshots/06-device-request-email-to-it.png"><img src="screenshots/06-device-request-email-to-it.png" width="120" alt="06 Email to IT"></a> | **06** The email IT receives |
+| <a href="screenshots/07-troubleshooting-quick-checks.png"><img src="screenshots/07-troubleshooting-quick-checks.png" width="120" alt="07 Quick checks"></a> <a href="screenshots/08-troubleshooting-narrowing-the-problem.png"><img src="screenshots/08-troubleshooting-narrowing-the-problem.png" width="120" alt="08 Narrowing the problem"></a> <a href="screenshots/09-troubleshooting-step-by-step-fix.png"><img src="screenshots/09-troubleshooting-step-by-step-fix.png" width="120" alt="09 Step-by-step fix"></a> <a href="screenshots/10-troubleshooting-resolved.png"><img src="screenshots/10-troubleshooting-resolved.png" width="120" alt="10 Resolved"></a> | **07-10** Troubleshooting an Outlook problem from first message to resolution |
+| <a href="screenshots/11-power-automate-flow.png"><img src="screenshots/11-power-automate-flow.png" width="120" alt="11 Power Automate flow"></a> | **11** The Power Automate flow behind the device request email |
 
 ## Tools
 
@@ -47,4 +49,4 @@ I kept the exported flow and agent files out of this repo because they contain t
 
 ## What I learned
 
-_Add your own notes here, in your own words._
+Power Platform is becoming a unified universe. I could have an agent take actions on my behalf by using Power Automate (a workflow), which I was already familiar with. Then the agent answers specific, scoped questions, with instructions and skills to support its direction, its responses and its actions. That was really cool.
