@@ -2,7 +2,7 @@
 
 An IT help desk agent I built in Microsoft Copilot Studio. It helps an employee troubleshoot a technical issue, or find and request a device, and it sends the finished request to IT by email.
 
-Built while working through [Microsoft's Agent Academy](https://microsoft.github.io/agent-academy/recruit-nextgen/) (Recruit NextGen, Microsoft Copilot harness path). The lab gave me the scenario and starter skills. The changes below are mine. All data is sample data in my own Microsoft 365 developer tenant.
+Built while working through [Microsoft's Agent Academy](https://microsoft.github.io/agent-academy/recruit-nextgen/) (Recruit NextGen, Microsoft Copilot harness path). The lab gave me the scenario and starter skills. The device skill's header credits its original author, elaiza-benitez, under the MIT license. The changes below are mine. All data is sample data in my own Microsoft 365 developer tenant.
 
 ## The problem
 
@@ -19,6 +19,7 @@ Looks up devices in a SharePoint list, shows lettered options with details and a
 ## What I changed from the lab
 
 - Matched the device skill to my own SharePoint **Devices** list: Title, Model, Asset type, Manufacturer, Color, Purchase price, Condition notes, Status and Device photo.
+- Filled in the real SharePoint column names for the list queries. Most match the display name, but Asset type is really `AssetType`.
 - Showed purchase price as currency, and kept serial number, order number and owner fields out of what employees see.
 - Built the email step as a Power Automate flow: requester name, manufacturer, model, a link to the item in SharePoint, and the employee's comment. The flow runs in four steps: When an agent calls the flow, Get Device from SharePoint, Send an email in Outlook, and Respond to the agent.
 - Fixed a Choice column showing as raw data in the email by using the column's Value.
@@ -49,4 +50,12 @@ I kept the exported flow and agent files out of this repo because they contain t
 
 ## What I learned
 
-Power Platform is becoming a unified universe. I could have an agent take actions on my behalf by using Power Automate (a workflow), which I was already familiar with. Then the agent answers specific, scoped questions, with instructions and skills to support its direction, its responses and its actions. That was really cool.
+Power Platform is starting to feel like one connected universe. I already knew Power Automate, so the action side of the agent felt familiar: the agent calls a flow, the flow reads SharePoint and sends the email, and then it responds back to the agent.
+
+What was new was how the agent itself is shaped:
+
+- **Instructions** keep it scoped. It only handles IT help desk questions, and it never asks for passwords.
+- **Skills** hold the step-by-step procedure for each job, one for troubleshooting and one for device requests.
+- **Tools and workflows** let it act on my behalf, like looking up the Devices list and emailing IT.
+
+The details taught me the most. The agent needs SharePoint's internal column names, not the display names. A Choice column showed up as raw data in the email until I used its Value. And the agent treated an attachment file name as an image link until I added a rule telling it not to.
