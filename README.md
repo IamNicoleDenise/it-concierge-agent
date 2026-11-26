@@ -6,6 +6,8 @@ Built while working through [Microsoft's Agent Academy](https://microsoft.github
 
 **Completed:** [Copilot Studio Agent Academy - Recruit NextGen](https://globalai.community/badges/19aafc71-446c-418d-ac24-3aadeeb93a09) (digital badge from the Global AI Community, issued November 26, 2026).
 
+<a href="https://globalai.community/badges/19aafc71-446c-418d-ac24-3aadeeb93a09"><img src="https://globalai.community/img/badge/shared/3844ac0e63382c107a094b55972f10ef2b38ef7e1db2a271b7b3d981e7d1af21.png" width="150" alt="Copilot Studio Agent Academy - Recruit NextGen digital badge"></a>
+
 ## The problem
 
 Employees ask IT the same things over and over: "My email stopped coming in" and "I need a new laptop." Someone has to answer, check what is in stock, and write up the request.
