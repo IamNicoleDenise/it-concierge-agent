@@ -4,6 +4,8 @@ An IT help desk agent I built in Microsoft Copilot Studio. It helps an employee 
 
 Built while working through [Microsoft's Agent Academy](https://microsoft.github.io/agent-academy/recruit-nextgen/) (Recruit NextGen, Microsoft Copilot harness path). The lab gave me the scenario and starter skills. The device skill's header credits its original author, elaiza-benitez, under the MIT license. The changes below are mine. All data is sample data in my own Microsoft 365 developer tenant.
 
+**Completed:** [Copilot Studio Agent Academy - Recruit NextGen](https://globalai.community/badges/19aafc71-446c-418d-ac24-3aadeeb93a09) (digital badge from the Global AI Community, issued November 26, 2026).
+
 ## The problem
 
 Employees ask IT the same things over and over: "My email stopped coming in" and "I need a new laptop." Someone has to answer, check what is in stock, and write up the request.
